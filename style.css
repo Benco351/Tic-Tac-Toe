@@ -1,0 +1,49 @@
+:root {
+	--cell-size: 100px;
+	background-color: #66fbc74b;
+	--color: #57c153df; /* for hover */
+	--color-set: #0275d8; /* when set */
+	--l: 10px; /* X line-width */
+}
+
+body {
+	margin: auto;
+	text-align: center;
+}
+.winning-message{  
+	display: -moz-grid;
+	height: 1vh;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	font-size: 40px;
+	font-family: "Permanent Marker",cursive;
+	text-align: center;
+}
+.board {
+	width: 100vw;
+	height: 50vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+
+}
+
+.cell {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: crosshair;
+	box-shadow: 0 0 0 2px;
+	font-size: 75px;
+	font-family: "Permanent Marker",cursive;
+}
+
